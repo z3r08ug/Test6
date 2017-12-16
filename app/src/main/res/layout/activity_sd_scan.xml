@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chris.test6.view.sdscan.SdScanActivity">
+
+    <ProgressBar
+        android:id="@+id/pbSdScan"
+        android:visibility="gone"
+        android:indeterminate="false"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvProgress"
+        android:layout_marginLeft="@dimen/std_left_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onScanSdCard"
+        android:text="Scan Sd Card Files"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onStopScan"
+        android:text="Stop Scanning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvBiggestTitle"
+        android:text="10 Biggest Files:"
+        android:layout_marginLeft="@dimen/std_left_margin"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvBiggestFiles"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/std_left_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/div1"
+        android:visibility="gone"
+        style="@style/Divider"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvAvgTitle"
+        android:text="Averagte File Size:"
+        android:layout_marginLeft="@dimen/std_left_margin"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvAvgFileSize"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/std_left_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/div2"
+        android:visibility="gone"
+        style="@style/Divider"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvFreqTitle"
+        android:text="Most Frequest Extensions:"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/std_left_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvFreqExtensions"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/std_left_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
